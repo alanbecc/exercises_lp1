@@ -13,7 +13,7 @@ public class Main {
         System.out.println("-------------------------------------------------");
 
         System.out.println("Ejercicio 3");
-        System.out.println(ejercicios.ejercicio3(7000));
+        System.out.println(ejercicios.ejercicio3(50000));
         System.out.println("-------------------------------------------------");
 
         System.out.println("Ejercicio 4");
@@ -21,7 +21,7 @@ public class Main {
         System.out.println("-------------------------------------------------");
 
         System.out.println("Ejercicio 5");
-        System.out.println(ejercicios.ejercicio5(2,5,8));
+        System.out.println(ejercicios.ejercicio5(6,5,8));
         System.out.println("-------------------------------------------------");
 
     }

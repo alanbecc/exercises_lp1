@@ -15,8 +15,12 @@ public class Ejercicios {
      *         Los dos números son iguales.
      */
     public String ejercicio1(int num1, int num2) {
-        // Implementar solución
-        return "";
+        if(num1>num2) {
+            return "El número mayor es: num1";  
+        } else if (num1<num2) {
+            return "El número mayor es: num2";
+        }
+        return " Los dos números son iguales.";
     }
     // ----------------------------------------------------------------------------------------
 
@@ -32,8 +36,10 @@ public class Ejercicios {
      *         Lo siento, usted ha reprobado el examen.
      */
     public String ejercicio2(double calificacion) {
-       // Implementar solución
-        return "";
+       if (calificacion >= 3.5) {
+        return "¡Felicidades! Usted ha aprobado el examen.";
+       }
+        return "Lo siento, usted ha reprobado el examen.";
     }
 
     // ----------------------------------------------------------------------------------------
@@ -49,8 +55,15 @@ public class Ejercicios {
      *         basado en el precio de entrada.           
      */
     public double ejercicio3(double precio) {
-        // Implementar solución
-        return 0;
+    double descuento = (precio >= 50000) ? precio * 0.1 : 0.0; 
+
+    double precioFinal = precio - descuento;
+
+    if (precio >= 50000){
+        return precioFinal;
+    }
+    
+     return precioFinal;
     }
 
     // ----------------------------------------------------------------------------------------
@@ -81,8 +94,11 @@ public class Ejercicios {
      */
     public String ejercicio4(int tipoFigura, double ladoCuadrado, double baseTriangulo, double alturaTriangulo,
             double radioCirculo) {
-        // Implementar solución
-        return "";
+        if (tipoFigura > 3 && tipoFigura < 1) {
+            return "Tipo de figura no válida.";
+        }
+        double area = ladoCuadrado * ladoCuadrado;
+        return "el area de la figura es " +area;
     }
 
     // ----------------------------------------------------------------------------------------
@@ -98,7 +114,14 @@ public class Ejercicios {
      *         `num2` y `num3`.
      */
     public int ejercicio5(int num1, int num2, int num3) {
-        // Implementar solución
+        if (num1<num2 && num1<num3){
+            return num1;
+        } else if (num2<num1 && num2<num3) {
+            return num2;
+        } else if (num3<num1 && num3<num2) {
+            return num3;
+        }
+    
         return 0;
     }
 }
